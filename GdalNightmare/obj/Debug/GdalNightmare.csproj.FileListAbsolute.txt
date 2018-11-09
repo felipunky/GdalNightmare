@@ -1,0 +1,17 @@
+c:\users\paula\documents\visual studio 2017\Projects\GdalNightmare\GdalNightmare\bin\Debug\GdalNightmare.dll.config
+c:\users\paula\documents\visual studio 2017\Projects\GdalNightmare\GdalNightmare\bin\Debug\GdalNightmare.dll
+c:\users\paula\documents\visual studio 2017\Projects\GdalNightmare\GdalNightmare\bin\Debug\GdalNightmare.pdb
+c:\users\paula\documents\visual studio 2017\Projects\GdalNightmare\GdalNightmare\bin\Debug\gdalconst_csharp.dll
+c:\users\paula\documents\visual studio 2017\Projects\GdalNightmare\GdalNightmare\bin\Debug\gdal_csharp.dll
+c:\users\paula\documents\visual studio 2017\Projects\GdalNightmare\GdalNightmare\bin\Debug\ogr_csharp.dll
+c:\users\paula\documents\visual studio 2017\Projects\GdalNightmare\GdalNightmare\bin\Debug\osr_csharp.dll
+c:\users\paula\documents\visual studio 2017\Projects\GdalNightmare\GdalNightmare\obj\Debug\GdalNightmare.dll
+c:\users\paula\documents\visual studio 2017\Projects\GdalNightmare\GdalNightmare\obj\Debug\GdalNightmare.pdb
+C:\Users\Paula\Documents\Visual Studio 2017\Projects\GdalNightmare\GdalNightmare\obj\Debug\GdalNightmare.csprojResolveAssemblyReference.cache
+C:\Users\Paula\Documents\Visual Studio 2017\Projects\GdalNightmare\GdalNightmare\bin\Debug\Accord.dll.config
+C:\Users\Paula\Documents\Visual Studio 2017\Projects\GdalNightmare\GdalNightmare\bin\Debug\Accord.dll
+C:\Users\Paula\Documents\Visual Studio 2017\Projects\GdalNightmare\GdalNightmare\bin\Debug\Accord.Math.Core.dll
+C:\Users\Paula\Documents\Visual Studio 2017\Projects\GdalNightmare\GdalNightmare\bin\Debug\Accord.Math.dll
+C:\Users\Paula\Documents\Visual Studio 2017\Projects\GdalNightmare\GdalNightmare\bin\Debug\Accord.xml
+C:\Users\Paula\Documents\Visual Studio 2017\Projects\GdalNightmare\GdalNightmare\bin\Debug\Accord.Math.xml
+C:\Users\Paula\Documents\Visual Studio 2017\Projects\GdalNightmare\GdalNightmare\bin\Debug\Accord.Math.Core.xml
