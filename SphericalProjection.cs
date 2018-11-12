@@ -16,7 +16,7 @@ namespace SphericalProjection
     public class SphericalProjection : GH_Component
     {
 
-        public SphericalProjection() : base( "SPHPRJ", "SphericalProjection", "This component converts latitudes and longitudes into a sphere projection", "THR34D5Workshop", "Projections" )
+        public SphericalProjection() : base( "Spherical", "SphericalProjection", "This component converts latitudes and longitudes into a sphere projection", "THR34D5Workshop", "Projections" )
         {
 
 
