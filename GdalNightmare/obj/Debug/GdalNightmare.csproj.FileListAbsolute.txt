@@ -15,3 +15,22 @@ C:\Users\Paula\Documents\Visual Studio 2017\Projects\GdalNightmare\GdalNightmare
 C:\Users\Paula\Documents\Visual Studio 2017\Projects\GdalNightmare\GdalNightmare\bin\Debug\Accord.xml
 C:\Users\Paula\Documents\Visual Studio 2017\Projects\GdalNightmare\GdalNightmare\bin\Debug\Accord.Math.xml
 C:\Users\Paula\Documents\Visual Studio 2017\Projects\GdalNightmare\GdalNightmare\bin\Debug\Accord.Math.Core.xml
+D:\Programas\GrasshopperPlugins\GdalNightmare\GdalNightmare\bin\Debug\Accord.dll.config
+D:\Programas\GrasshopperPlugins\GdalNightmare\GdalNightmare\bin\Debug\GdalNightmare.dll.config
+D:\Programas\GrasshopperPlugins\GdalNightmare\GdalNightmare\bin\Debug\GdalNightmare.dll
+D:\Programas\GrasshopperPlugins\GdalNightmare\GdalNightmare\bin\Debug\GdalNightmare.pdb
+D:\Programas\GrasshopperPlugins\GdalNightmare\GdalNightmare\bin\Debug\Accord.dll
+D:\Programas\GrasshopperPlugins\GdalNightmare\GdalNightmare\bin\Debug\Accord.Math.Core.dll
+D:\Programas\GrasshopperPlugins\GdalNightmare\GdalNightmare\bin\Debug\Accord.Math.dll
+D:\Programas\GrasshopperPlugins\GdalNightmare\GdalNightmare\bin\Debug\gdalconst_csharp.dll
+D:\Programas\GrasshopperPlugins\GdalNightmare\GdalNightmare\bin\Debug\gdal_csharp.dll
+D:\Programas\GrasshopperPlugins\GdalNightmare\GdalNightmare\bin\Debug\ogr_csharp.dll
+D:\Programas\GrasshopperPlugins\GdalNightmare\GdalNightmare\bin\Debug\osr_csharp.dll
+D:\Programas\GrasshopperPlugins\GdalNightmare\GdalNightmare\bin\Debug\Accord.xml
+D:\Programas\GrasshopperPlugins\GdalNightmare\GdalNightmare\bin\Debug\Accord.Math.xml
+D:\Programas\GrasshopperPlugins\GdalNightmare\GdalNightmare\bin\Debug\Accord.Math.Core.xml
+D:\Programas\GrasshopperPlugins\GdalNightmare\GdalNightmare\obj\Debug\GdalNightmare.csprojAssemblyReference.cache
+D:\Programas\GrasshopperPlugins\GdalNightmare\GdalNightmare\obj\Debug\GdalNightmare.csproj.CoreCompileInputs.cache
+D:\Programas\GrasshopperPlugins\GdalNightmare\GdalNightmare\obj\Debug\GdalNightmare.csproj.CopyComplete
+D:\Programas\GrasshopperPlugins\GdalNightmare\GdalNightmare\obj\Debug\GdalNightmare.dll
+D:\Programas\GrasshopperPlugins\GdalNightmare\GdalNightmare\obj\Debug\GdalNightmare.pdb

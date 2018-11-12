@@ -104,10 +104,10 @@ namespace GdalNightmare
             var xx = EnumerableUtilities.RangePython(xmin, xmax + xres, xres);
             var yy = EnumerableUtilities.RangePython(ymax + yres, ymin, yres);
 
-            var M = Acc.Matrix.MeshGrid( xx.ToArray(), yy.ToArray() );
+            var M = Acc.Matrix.MeshGrid( yy.ToArray(), xx.ToArray() );
 
-            var x = M.Item1;
-            var y = M.Item2;
+            var y = M.Item1;
+            var x = M.Item2;
 
             var band = ds.GetRasterBand(1);
 
@@ -122,8 +122,8 @@ namespace GdalNightmare
             ds = null;
 
             DA.SetData( 0, output );
-            DA.SetDataList( 1, xx );
-            DA.SetDataList( 2, yy );
+            DA.SetDataList( 1, x );
+            DA.SetDataList( 2, y );
             DA.SetDataList( 3, data );
 
         }
