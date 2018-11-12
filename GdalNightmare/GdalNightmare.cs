@@ -18,7 +18,7 @@ namespace GdalNightmare
     public class GdalNightmare : GH_Component
     {
 
-        public GdalNightmare() : base( "GDAL", "Gdal", "This component converts Grib files into Grasshopper data", "GDAL", "Gdal" )
+        public GdalNightmare() : base( "ReadGribFiles", "Read information from grib files", "This component converts Grib files into Grasshopper data", "THR34D5Workshop", "ExtractData")
         {
 
 
@@ -35,17 +35,17 @@ namespace GdalNightmare
         protected override void RegisterInputParams(GH_InputParamManager pManager)
         {
 
-            pManager.AddTextParameter( "String", "S", "String", GH_ParamAccess.item );
+            pManager.AddTextParameter( "PathToFile", "Path", "Path to directory where the grib2 file resides", GH_ParamAccess.item );
 
         }
 
         protected override void RegisterOutputParams(GH_OutputParamManager pManager)
         {
 
-            pManager.AddTextParameter( "StringOut", "SO", "String Out", GH_ParamAccess.item );
+            pManager.AddTextParameter( "CatchErrors", "ERR", "Tell if there is an error while loading the libraries", GH_ParamAccess.item );
             pManager.AddNumberParameter( "Latitude", "Lat", "Creates the latitudes from the grib2 file", GH_ParamAccess.list );
             pManager.AddNumberParameter( "Longitude", "Lon", "Creates the longitudes from the grib2 file", GH_ParamAccess.list );
-            pManager.AddNumberParameter( "Data", "DS", "Extracts the data from the grib2 file", GH_ParamAccess.list );
+            pManager.AddNumberParameter( "DataSet", "DS", "Extracts the data from the grib2 file", GH_ParamAccess.list );
 
         }
 
@@ -77,12 +77,6 @@ namespace GdalNightmare
             DA.GetData(0, ref input);
 
             string file = input;
-
-            //output = "Yes";
-
-            //input = '@' + input;
-
-            //string file = @"C:\Users\Paula\Downloads\seaice.t00z.grb.grib2";
 
             OSGeo.GDAL.Dataset ds = OSGeo.GDAL.Gdal.Open( file, OSGeo.GDAL.Access.GA_ReadOnly );
 
