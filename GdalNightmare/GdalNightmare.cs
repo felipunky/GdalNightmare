@@ -44,8 +44,6 @@ namespace GdalNightmare
         {
 
             pManager.AddTextParameter( "CatchErrors", "ERR", "Tell if there is an error while loading the libraries", GH_ParamAccess.item );
-            pManager.AddNumberParameter( "Latitude", "Lat", "Creates the latitudes from the grib2 file", GH_ParamAccess.list );
-            pManager.AddNumberParameter( "Longitude", "Lon", "Creates the longitudes from the grib2 file", GH_ParamAccess.list );
             pManager.AddNumberParameter( "DataSet", "DS", "Extracts the data from the grib2 file", GH_ParamAccess.list );
 
         }
@@ -85,29 +83,6 @@ namespace GdalNightmare
 
             OSGeo.GDAL.Dataset ds = OSGeo.GDAL.Gdal.Open( file, OSGeo.GDAL.Access.GA_ReadOnly );
 
-            double[] gt = new double[6];
-
-            ds.GetGeoTransform( gt );
-
-            var xres = gt[1];
-            var yres = gt[5];
-
-            var xsize = ds.RasterXSize;
-            var ysize = ds.RasterYSize;
-
-            var xmin = gt[0] + xres * 0.5;
-            var xmax = gt[0] + (xres * xsize) - xres * 0.5;
-            var ymin = gt[3] + (yres * ysize) + yres * 0.5;
-            var ymax = gt[3] - yres * 0.5;
-
-            var xx = EnumerableUtilities.RangePython(xmin, xmax + xres, xres);
-            var yy = EnumerableUtilities.RangePython(ymax + yres, ymin, yres);
-
-            var M = Acc.Matrix.MeshGrid( yy.ToArray(), xx.ToArray() );
-
-            var y = M.Item1;
-            var x = M.Item2;
-
             var band = ds.GetRasterBand( pickBand );
 
             var bandXSize = band.XSize;
@@ -121,9 +96,7 @@ namespace GdalNightmare
             ds = null;
 
             DA.SetData( 0, output );
-            DA.SetDataList( 1, x );
-            DA.SetDataList( 2, y );
-            DA.SetDataList( 3, data );
+            DA.SetDataList( 1, data );
 
         }
 
