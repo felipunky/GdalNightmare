@@ -18,7 +18,7 @@ namespace GdalNightmare
     public class GdalNightmare : GH_Component
     {
 
-        public GdalNightmare() : base( "ReadGribFiles", "Read information from grib files", "This component converts Grib files into Grasshopper data", "THR34D5Workshop", "ExtractData")
+        public GdalNightmare() : base("Read information from grib files", "ReadGribFiles", "This component converts Grib files into Grasshopper data", "THR34D5Workshop", "ExtractData")
         {
 
 
@@ -36,7 +36,7 @@ namespace GdalNightmare
         {
 
             pManager.AddTextParameter( "PathToFile", "Path", "Path to directory where the grib2 file resides", GH_ParamAccess.item );
-            pManager.AddIntegerParameter( "BandToSelect", "BandNumber", "Pick which band of the file you want to read", GH_ParamAccess.item );
+            pManager.AddIntegerParameter( "BandToSelect", "BandNumber", "Pick which band of the file you want to read, If you don't know just use 1", GH_ParamAccess.item );
 
         }
 
@@ -47,7 +47,6 @@ namespace GdalNightmare
             pManager.AddNumberParameter( "Latitude", "Lat", "Creates the latitudes from the grib2 file", GH_ParamAccess.list );
             pManager.AddNumberParameter( "Longitude", "Lon", "Creates the longitudes from the grib2 file", GH_ParamAccess.list );
             pManager.AddNumberParameter( "DataSet", "DS", "Extracts the data from the grib2 file", GH_ParamAccess.list );
-            pManager.AddIntegerParameter( "NumberOfBands", "NumBands", "Gets the number of bands from the file to open", GH_ParamAccess.item );
 
         }
 
@@ -80,15 +79,11 @@ namespace GdalNightmare
 
             string file = input;
 
-            int numberOfBands = 0;
-
             int pickBand = 1;
 
             DA.GetData( 1, ref pickBand );
 
             OSGeo.GDAL.Dataset ds = OSGeo.GDAL.Gdal.Open( file, OSGeo.GDAL.Access.GA_ReadOnly );
-
-            numberOfBands = ds.RasterCount;
 
             double[] gt = new double[6];
 
@@ -129,7 +124,6 @@ namespace GdalNightmare
             DA.SetDataList( 1, x );
             DA.SetDataList( 2, y );
             DA.SetDataList( 3, data );
-            DA.SetData( 4, numberOfBands );
 
         }
 
